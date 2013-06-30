@@ -1,0 +1,16 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=4641
+
+This plugin introduces 3 new Vim commands:
+
+1. vic (select in-case)
+2. dic (delete in-case) -- this mapping is disabled as of version 0.2 (you can define your own if you need to)
+3. cic (change/substitute in-case)
+
+Supported identifier cases are "camel case" (coolCat, CoolCat), "snake case" (good_dog, GOOD_DOG) and a mix of both (_coolDog, Good_Cat).
+
+By using the above commands you can quickly select, delete or change segments of cased identifiers depending on which segment the cursor is pointing at. For example ([x] denotes the cursor position, or selection):
+
+viw: Fo[o]Bar -> [Foo]Bar (-> visual mode)
+ciw: foo_[B]arBaz -> foo_[]Baz (-> insert mode)
+
+in order to use in-case deletion you may map the call to DeleteInCase() accordingly.
