@@ -196,5 +196,5 @@ function! ChangeInCase()
 endfunction
 
 map vic :call SelectInCase()<CR>
-map dic :call DeleteInCase()<CR>
+"map dic :call DeleteInCase()<CR>
 map cic :call ChangeInCase()<CR>
